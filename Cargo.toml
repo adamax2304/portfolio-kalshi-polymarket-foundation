@@ -1,0 +1,73 @@
+[workspace]
+resolver = "2"
+members = [
+  "apps/ops-cli",
+  "apps/paper-trader",
+  "apps/replay-runner",
+  "packages/config",
+  "packages/decimal",
+  "packages/logger",
+  "packages/market-regimes",
+  "packages/metrics",
+  "packages/orderbook",
+  "packages/pnl",
+  "packages/pricing",
+  "packages/queue-model",
+  "packages/replay",
+  "packages/risk-models",
+  "packages/shared-types",
+  "packages/signal-models",
+  "packages/simulator",
+  "packages/storage",
+  "packages/time",
+  "packages/utils",
+  "packages/venue-binance",
+  "packages/venue-deribit",
+  "packages/venue-kalshi",
+  "packages/venue-polymarket",
+  "services/analytics-engine",
+  "services/fair-value-engine",
+  "services/market-gateway-binance",
+  "services/market-gateway-deribit",
+  "services/market-gateway-kalshi",
+  "services/market-gateway-polymarket",
+  "services/metadata-service",
+  "services/normalizer",
+  "services/paper-execution",
+  "services/recorder",
+  "services/signal-engine",
+  "tests/integration",
+]
+
+[workspace.package]
+edition = "2021"
+version = "0.1.0"
+license = "MIT"
+authors = ["Phase1 Foundation Team"]
+
+[workspace.dependencies]
+anyhow = "1.0"
+async-trait = "0.1"
+axum = { version = "0.7", features = ["macros"] }
+chrono = { version = "0.4", features = ["serde", "clock"] }
+clap = { version = "4.5", features = ["derive"] }
+clickhouse = { version = "0.12", features = ["uuid", "time"] }
+dotenvy = "0.15"
+futures = "0.3"
+prometheus = "0.13"
+redis = { version = "0.25", features = ["tokio-comp"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+rust_decimal = { version = "1.35", features = ["serde-str"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+tokio = { version = "1.38", features = ["macros", "rt-multi-thread", "signal", "sync", "time", "net", "process"] }
+tokio-postgres = { version = "0.7", features = ["with-chrono-0_4", "with-serde_json-1", "with-uuid-1"] }
+tokio-stream = "0.1"
+tokio-tungstenite = { version = "0.23", features = ["rustls-tls-webpki-roots"] }
+tower-http = { version = "0.5", features = ["trace"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "json"] }
+url = "2.5"
+uuid = { version = "1.8", features = ["v4", "v5", "serde"] }
+sha2 = "0.10"

@@ -1,0 +1,8 @@
+{
+  "scenario_id": "wide_spread_kalshi_tight_poly",
+  "description": "Wide spread on Kalshi, tight on Polymarket",
+  "underlying": "BTC",
+  "event_pattern": "venue_spread_divergence",
+  "expected_checks": ["wide_spread_flag", "dynamic_threshold_increase", "signal_filtering"]
+}
+

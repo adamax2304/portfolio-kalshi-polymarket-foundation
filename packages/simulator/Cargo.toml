@@ -1,0 +1,15 @@
+[package]
+name = "simulator"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+chrono.workspace = true
+pnl = { path = "../pnl" }
+queue-model = { path = "../queue-model" }
+risk-models = { path = "../risk-models" }
+rust_decimal.workspace = true
+serde.workspace = true
+signal-models = { path = "../signal-models" }

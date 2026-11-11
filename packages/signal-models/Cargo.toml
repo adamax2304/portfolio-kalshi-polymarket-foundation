@@ -1,0 +1,13 @@
+[package]
+name = "signal-models"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+chrono.workspace = true
+market-regimes = { path = "../market-regimes" }
+rust_decimal.workspace = true
+serde.workspace = true
+serde_json.workspace = true

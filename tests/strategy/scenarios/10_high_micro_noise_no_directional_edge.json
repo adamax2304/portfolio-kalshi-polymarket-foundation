@@ -1,0 +1,6 @@
+{
+  "scenario_id": "high_micro_noise_no_directional_edge",
+  "description": "High microstructure noise with no real directional edge",
+  "expected_checks": ["confidence_penalty", "signals_filtered", "low_capture_ratio"]
+}
+

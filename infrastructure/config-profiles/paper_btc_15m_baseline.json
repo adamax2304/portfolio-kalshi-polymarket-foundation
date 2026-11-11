@@ -1,0 +1,30 @@
+{
+  "name": "paper_btc_15m_baseline",
+  "description": "Live paper loop defaults for BTC 15m",
+  "vol_windows_seconds": [30, 60, 180, 300],
+  "signal_thresholds": {
+    "base_required_edge_bps": 22,
+    "min_confidence": 0.20
+  },
+  "regime_multipliers": {
+    "near_expiry": 1.15,
+    "stressed": 1.35
+  },
+  "max_paper_size": 1500,
+  "max_time_in_market_seconds": 900,
+  "slippage_model_params": {
+    "taker_depth_impact_weight": 0.25,
+    "near_expiry_deterioration_bps": 8
+  },
+  "queue_model_params": {
+    "touch_fill_penalty": 0.30,
+    "maker_persistence_bonus": 0.15
+  },
+  "confidence_filters": {
+    "min_confidence": 0.20
+  },
+  "near_expiry_penalties": {
+    "fair_prob_shift": 0.10
+  }
+}
+

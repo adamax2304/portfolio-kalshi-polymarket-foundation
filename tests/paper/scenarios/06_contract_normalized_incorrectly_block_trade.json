@@ -1,0 +1,6 @@
+{
+  "scenario_id": "contract_normalized_incorrectly_block_trade",
+  "description": "Contract normalized incorrectly and trade is blocked",
+  "expected_checks": ["unresolved_normalized_contract", "no_trade"]
+}
+

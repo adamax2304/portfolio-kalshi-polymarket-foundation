@@ -1,0 +1,8 @@
+{
+  "scenario_id": "stale_binance_feed",
+  "description": "Binance feed stale while venue books still update",
+  "underlying": "BTC",
+  "event_pattern": "stale_reference",
+  "expected_checks": ["risk_block_stale_reference_feed", "no_trade"]
+}
+

@@ -1,0 +1,20 @@
+[package]
+name = "storage"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+async-trait.workspace = true
+chrono.workspace = true
+clickhouse.workspace = true
+config = { path = "../config" }
+redis.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+shared-types = { path = "../shared-types" }
+tokio.workspace = true
+tokio-postgres.workspace = true
+tracing.workspace = true

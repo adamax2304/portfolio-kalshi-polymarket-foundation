@@ -1,0 +1,8 @@
+{
+  "scenario_id": "venue_disconnect_strong_signal",
+  "description": "Venue disconnect during strong signal",
+  "underlying": "ETH",
+  "event_pattern": "disconnect_during_edge",
+  "expected_checks": ["risk_block_disconnected_feed", "signal_rejected"]
+}
+

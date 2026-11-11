@@ -1,0 +1,18 @@
+[package]
+name = "phase1-integration-tests"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+chrono.workspace = true
+queue-model = { path = "../../packages/queue-model" }
+reqwest.workspace = true
+risk-models = { path = "../../packages/risk-models" }
+rust_decimal.workspace = true
+serde_json.workspace = true
+shared-types = { path = "../../packages/shared-types" }
+signal-models = { path = "../../packages/signal-models" }
+tokio.workspace = true

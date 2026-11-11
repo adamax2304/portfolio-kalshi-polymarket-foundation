@@ -1,0 +1,8 @@
+{
+  "scenario_id": "tight_kalshi_lagging_poly",
+  "description": "Tight spread on Kalshi, lagging Polymarket",
+  "underlying": "ETH",
+  "event_pattern": "lead_lag_cross_venue",
+  "expected_checks": ["cross_venue_lead_lag_signal", "direction_consistency"]
+}
+

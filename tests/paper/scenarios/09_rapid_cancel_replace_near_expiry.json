@@ -1,0 +1,6 @@
+{
+  "scenario_id": "rapid_cancel_replace_near_expiry",
+  "description": "Rapid cancel/replace environment near expiry",
+  "expected_checks": ["delayed_fill_penalty", "execution_deterioration", "higher_required_edge"]
+}
+

@@ -1,0 +1,23 @@
+[package]
+name = "signal-engine"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+axum.workspace = true
+chrono.workspace = true
+config = { path = "../../packages/config" }
+logger = { path = "../../packages/logger" }
+metrics = { path = "../../packages/metrics" }
+pricing = { path = "../../packages/pricing" }
+rust_decimal.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+signal-models = { path = "../../packages/signal-models" }
+storage = { path = "../../packages/storage" }
+tokio.workspace = true
+tower-http.workspace = true
+tracing.workspace = true

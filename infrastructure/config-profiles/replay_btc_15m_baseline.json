@@ -1,0 +1,35 @@
+{
+  "name": "replay_btc_15m_baseline",
+  "description": "Baseline replay profile for BTC 15m",
+  "vol_windows_seconds": [30, 60, 180, 300],
+  "signal_thresholds": {
+    "base_required_edge_bps": 22,
+    "min_confidence": 0.18
+  },
+  "regime_multipliers": {
+    "near_expiry": 1.12,
+    "stressed": 1.35
+  },
+  "slippage_model_params": {
+    "taker_depth_impact_weight": 0.25,
+    "near_expiry_deterioration_bps": 8
+  },
+  "queue_model_params": {
+    "touch_fill_penalty": 0.30,
+    "maker_persistence_bonus": 0.15
+  },
+  "risk_limits": {
+    "max_notional_per_market": 1500,
+    "max_time_in_market_seconds": 900
+  },
+  "runs": [
+    {
+      "from": "2026-01-10T00:00:00Z",
+      "to": "2026-01-10T02:00:00Z",
+      "underlying": "BTC",
+      "mode": "paper",
+      "speed": "x20"
+    }
+  ]
+}
+

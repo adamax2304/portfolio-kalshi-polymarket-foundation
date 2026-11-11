@@ -1,0 +1,6 @@
+{
+  "scenario_id": "partial_fill_first_leg_only",
+  "description": "Partial fill on simulated first leg only",
+  "expected_checks": ["partial_fill", "exposure_risk_increase", "risk_cooldown_candidate"]
+}
+

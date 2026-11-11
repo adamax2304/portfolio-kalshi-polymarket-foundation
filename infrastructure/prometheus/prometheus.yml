@@ -1,0 +1,38 @@
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+
+scrape_configs:
+  - job_name: "gateway-binance"
+    static_configs:
+      - targets: ["host.docker.internal:7001"]
+  - job_name: "gateway-polymarket"
+    static_configs:
+      - targets: ["host.docker.internal:7002"]
+  - job_name: "gateway-kalshi"
+    static_configs:
+      - targets: ["host.docker.internal:7003"]
+  - job_name: "gateway-deribit"
+    static_configs:
+      - targets: ["host.docker.internal:7004"]
+  - job_name: "recorder"
+    static_configs:
+      - targets: ["host.docker.internal:7010"]
+  - job_name: "normalizer"
+    static_configs:
+      - targets: ["host.docker.internal:7011"]
+  - job_name: "metadata-service"
+    static_configs:
+      - targets: ["host.docker.internal:7012"]
+  - job_name: "fair-value-engine"
+    static_configs:
+      - targets: ["host.docker.internal:7013"]
+  - job_name: "signal-engine"
+    static_configs:
+      - targets: ["host.docker.internal:7014"]
+  - job_name: "paper-execution"
+    static_configs:
+      - targets: ["host.docker.internal:7015"]
+  - job_name: "analytics-engine"
+    static_configs:
+      - targets: ["host.docker.internal:7016"]

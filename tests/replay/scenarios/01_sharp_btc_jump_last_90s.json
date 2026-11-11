@@ -1,0 +1,9 @@
+{
+  "scenario_id": "sharp_btc_jump_last_90s",
+  "description": "Sharp BTC jump in last 90 seconds before expiry",
+  "underlying": "BTC",
+  "time_to_expiry_start_seconds": 90,
+  "event_pattern": "jump_up_then_whipsaw",
+  "expected_checks": ["near_expiry_stressed_regime", "confidence_drop", "wider_fair_band"]
+}
+

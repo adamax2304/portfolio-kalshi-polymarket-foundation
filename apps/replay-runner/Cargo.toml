@@ -1,0 +1,26 @@
+[package]
+name = "replay-runner"
+edition.workspace = true
+version.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+chrono.workspace = true
+clap.workspace = true
+clickhouse.workspace = true
+config = { path = "../../packages/config" }
+pnl = { path = "../../packages/pnl" }
+pricing = { path = "../../packages/pricing" }
+queue-model = { path = "../../packages/queue-model" }
+replay = { path = "../../packages/replay" }
+risk-models = { path = "../../packages/risk-models" }
+rust_decimal.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+signal-models = { path = "../../packages/signal-models" }
+simulator = { path = "../../packages/simulator" }
+storage = { path = "../../packages/storage" }
+tokio.workspace = true
+tracing.workspace = true

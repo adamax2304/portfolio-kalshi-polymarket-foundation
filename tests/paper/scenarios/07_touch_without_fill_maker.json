@@ -1,0 +1,6 @@
+{
+  "scenario_id": "touch_without_fill_maker",
+  "description": "Touch without fill for maker",
+  "expected_checks": ["touch_not_equal_fill", "partial_or_no_fill"]
+}
+
